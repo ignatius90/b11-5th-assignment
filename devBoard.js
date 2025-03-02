@@ -48,7 +48,6 @@ for (let btn of btnCompleted) {
     
 }
   
-
 // history cleared
 document.getElementById('clear-history').addEventListener('click', function () {
   document.getElementById('add-history').innerHTML = ' ';
