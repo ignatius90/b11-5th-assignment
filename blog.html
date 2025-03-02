@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog</title>
+  <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  <!-- poppins font cdn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      font-style: normal;
+    }
+  </style>
+</head>
+
+<body class="bg-[#f4f7ff]">
+  <header class="w-[1440px] mx-auto pt-5">
+    <nav class="flex justify-between bg-white rounded-xl p-5">
+      <div class="flex items-center gap-2">
+        <img class="size-[45px]" src="images/logo.png" alt="logo">
+        <h3 class="text-3xl">Dev<span class="font-bold">Board</span></h3>
+      </div>
+      <div class="">
+        <button id="btn-back-desk" class="bg-blue-600 text-white px-4 py-2 rounded-md">Back to Desk</button>
+      </div>
+    </nav>
+  </header>
+  <main class="w-[1440px] mx-auto">
+    <h2 class="text-center font-bold text-3xl py-10">Blog</h2>
+    <div class="bg-white p-5 rounded-xl mb-5">
+      <h3 class="font-bold text-xl mb-5 pb-4 border-b-[1px] border-dashed border-[#dddddd]">What are the Question-1:
+        What are the different ways to select an element in the DOM?
+      </h3>
+      <p class="text-gray-500">There are a couple of ways to select an element in dom. They are, getElementByID(),
+        getElementsByClassName(),
+        getElementsByTagName(), querySelectorAll(), querrySelector().</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl mb-5">
+      <h3 class="font-bold text-xl mb-5 pb-4 border-b-[1px] border-dashed border-[#dddddd]">Question-2: What is the
+        difference between innerHTML, innerText, and textContent ?
+      </h3>
+      <p class="text-gray-500">innerHTML, innerText & textContent are the properties of Dom in html. innerHTML provide
+        the the HTML markup and text
+        content at the same time whereas innerText provide the content inside of an element and ignore html tags. And
+        textContent provide the text content of elements & it contains white spaces, hidden elements, newlines etc.</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl mb-5">
+      <h3 class="font-bold text-xl mb-5 pb-4 border-b-[1px] border-dashed border-[#dddddd]">Question-3: What is event
+        delegation in the DOM?
+      </h3>
+      <p class="text-gray-500">event delegation is a process in Javascript where a single event listener is attached and
+        will trigger all selector that
+        will match.</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl mb-5">
+      <h3 class="font-bold text-xl mb-5 pb-4 border-b-[1px] border-dashed border-[#dddddd]">Question-4: What is event
+        bubbling in the DOM?
+      </h3>
+      <p class="text-gray-500">Event bubbling is a type of DOM where describe how the event propagate or bubble up when
+        it triggered. The event stat at
+        the target element and propagate up through its parent element to the root.</p>
+    </div>
+    <div class="bg-white p-5 rounded-xl mb-5">
+      <h3 class="font-bold text-xl mb-5 pb-4 border-b-[1px] border-dashed border-[#dddddd]">Question-5: How do you
+        create, add, and remove elements using JavaScript?
+      </h3>
+      <p class="text-gray-500">We can create and add new element by document.CreateElements() and then .appendChild(),.
+        And by using .removeChild(), we
+        can remove the element.</p>
+    </div>
+  </main>
+  <script src="devBlog.js"></script>
+</body>
+
+</html>

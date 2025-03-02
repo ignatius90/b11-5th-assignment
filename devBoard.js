@@ -46,48 +46,14 @@ for (let btn of btnCompleted) {
     document.getElementById('add-history').appendChild(addHistory);
   });
     
-  }
-    
+}
+  
+
 // history cleared
 document.getElementById('clear-history').addEventListener('click', function () {
   document.getElementById('add-history').innerHTML = ' ';
 })
 
-
-
-// completed button click
-// let btnCompleted = document.getElementById('btn-completed');
-// let clearHistory = document.getElementById('clear-history');
-
-// document.getElementById('btn-completed').addEventListener('click', function (event) {
-  
-//   btnCompleted.disabled = true;
-  
-//   // Task Assigned Added
-//   let taskNumber = document.getElementById('task-numbers').innerText;
-//   let convertTaskNumber = parseInt(taskNumber);
-//   if (convertTaskNumber <= 6) {
-//     let totalTask = convertTaskNumber - 1;
-//     document.getElementById('task-numbers').innerText = totalTask;
-//   }
-  
-//   // total task completed
-//   let taskComplete = document.getElementById('task-complete').innerText;
-//   let convertTaskComplete = parseInt(taskComplete);
-//   if (convertTaskComplete >= 23) {
-//     let total = convertTaskComplete + 1;
-//     document.getElementById('task-complete').innerText = total;
-//   }
-// // time added
-//   let time = new Date();
-//   let timeAdd = time.toLocaleDateString();
-  
-//   let addHistory = document.getElementById('add-history');
-//   addHistory.innerHTML = `<p>You have completed the task <strong>Fix Mobile Button Issue</strong> at ${timeAdd}.</p>`;
-// })
-// // history cleared
-// document.getElementById('clear-history').addEventListener('click', function () {
-//   document.getElementById('add-history').innerHTML = ' ';
-// })
-
-
+document.getElementById('discover-btn').addEventListener('click', function () {
+  window.location.href = 'blog.html';
+})
